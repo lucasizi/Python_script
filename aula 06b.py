@@ -1,0 +1,7 @@
+n1 = input("Digite Algo:")
+print('O que foi digitado é um número ?\n',n1.isnumeric())
+print('O que foi digitado é uma letra ?\n',n1.isalpha())
+print('O que foi digitado possui apenas uma letra ou um número ?\n',n1.isalnum())
+print('O que foi digitado possui apenas letras maiúsculas ?\n',n1.isupper())
+print('O que foi digitado possui apenas letras minúsculas ?\n',n1.islower())
+print('O que foi digitado é um espaço ?\n',n1.isspace())

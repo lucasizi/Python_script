@@ -1,6 +1,11 @@
-x = 2
-y = 3
+x = 1
+y = 2
 
-soma = x + y
-
-print(soma <= y)
+if x == y:
+    print("numero iguais")
+elif x < y:
+    print("x menor que y")
+elif x > y:
+    print("y maior que x")
+else:
+    print("numero diferentes")

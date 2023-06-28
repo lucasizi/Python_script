@@ -1,11 +1,15 @@
-x = 1
-y = 2
+def soma(x, y):
+    return x+y
 
-if x == y:
-    print("numero iguais")
-elif x < y:
-    print("x menor que y")
-elif x > y:
-    print("y maior que x")
-else:
-    print("numero diferentes")
+
+
+s = soma(2,2)
+print(s)
+
+def multiplicacao(x,y):
+    return x*y
+
+m = multiplicacao(3,4)
+
+print(m)
+

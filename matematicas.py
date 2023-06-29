@@ -1,19 +1,8 @@
-# Matematica
-# Soma
-print(2+2)
+lista = [1,2,3,4,5,6,7,8,9,10]
+lista2 = []
 
-#subtração
-print(2-2)
-
-#Divisão
-print(2/2)
-
-#multiplicação
-print(2*2)
-
-#exponenciação
-print(2 ** 3)
-
-#modulo
-print (10 % 3)
-
+def dobro(i):
+    if i%2==0:
+        return i
+lista2 = filter(dobro, lista)
+print(lista2)

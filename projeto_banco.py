@@ -14,10 +14,6 @@ limite = 500
 extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
-saque_1 = ""
-saque_2 = ""
-saque_3 = ""
-
 
 while True:
     

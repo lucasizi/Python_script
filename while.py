@@ -2,7 +2,8 @@ opcao = -1
 saldo = 5000
 limite = 0
 
-print("Olá, bem-vindo ao banco, o que deseja fazer?")
+print("""========== - Olá, bem-vindo ao banco, o que deseja fazer? - ==========
+      """)
 
 while opcao !=0:
     limite = limite +1

@@ -45,7 +45,7 @@ while True:
         elif saque > 0:
             numero_saques = numero_saques + 1
             saldo = saldo - saque
-            extrato += (f"Saque de: R$ {saque:.2f} no dia ({data_em_texto})\n")
+            extrato += (f"Saque: R$ {saque:.2f} no dia ({data_em_texto})\n")
         else:
             print("Operação falhou! O valor informado é inválido!")
             

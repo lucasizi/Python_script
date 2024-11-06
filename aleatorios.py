@@ -1,16 +1,28 @@
+import psycopg2
 
-from math import sqrt
-a = int(input("Digite o valor de A: "))
-b = int(input("Digite o valor de B: "))
-c = int(input("Digite o valor de C: "))
+# Parâmetros de conexão
+dbname   = 'postgres'
+user     = 'postgres'
+password = '12345'
+host     = 'localhost'
+port     = '5432'
 
-delta = b**2 - 4*a*c
-if delta < 0:
-    print("Delta negativo")
-else:
-    raiz_delta = sqrt(delta)
-    x1 = (-b + raiz_delta)/2*a
-    x2 = (-b - raiz_delta)/2*a
+# Criar uma conexão
+conn = psycopg2.connect(dbname=dbname,
+                        user=user,
+                        password=password,
+                        host=host,
+                        port=port)
 
-    print("As raizes são", x1, "e", x2)
 
+cur = conn.cursor()# Criar um cursor que deixa manipular os dados
+
+#comandos sql transct-sql
+create_table_query = ''' CREATE TABLE exemplo ( id SERIAL PRIMARY KEY, nome VARCHAR(100), idade INT, endereco TEXT ) '''
+cur.execute(create_table_query)
+
+conn.commit() # validar alterações que fizemos e commitar para o banco de dados
+
+# Fechar o cursor e a conexão
+cur.close()
+conn.close()
